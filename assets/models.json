@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content instantly\nPerfect for blogs, ads, and emails",
+    "price": 10,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Blog writer", "Ad copy generator", "SEO optimization"],
+    "icon": "✍️"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "Access modern design templates\nReady for web and print use",
+    "price": 29,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["500+ templates", "Figma & PSD files", "Easy customization"],
+    "icon": "🎨"
+  },
+  {
+    "id": 3,
+    "name": "Premium Stock Access",
+    "description": "Unlimited premium stock assets\nPhotos, videos, and graphics",
+    "price": 15,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["HD images", "Stock videos", "Royalty-free license"],
+    "icon": "📷"
+  },
+  {
+    "id": 4,
+    "name": "Automation Toolkit",
+    "description": "Automate your daily workflows\nSave time with smart tools",
+    "price": 49,
+    "period": "yearly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Task automation", "API integration", "Workflow builder"],
+    "icon": "⚙️"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes easily\nOptimized for job applications",
+    "price": 5,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["ATS-friendly templates", "PDF export", "Custom sections"],
+    "icon": "📄"
+  },
+  {
+    "id": 6,
+    "name": "Social Media Content Kit",
+    "description": "Ready-made social media content\nBoost engagement instantly",
+    "price": 19,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Post templates", "Caption generator", "Hashtag suggestions"],
+    "icon": "📱"
+  }
+]
