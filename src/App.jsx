@@ -6,6 +6,9 @@ import Navbar from './Component/Navbar'
 import Activity from './Component/Activity'
 import Footer from './Footer'
 import Models from './Component/Models'
+import Cart from './Component/Cart'
+import { useState } from 'react'
+import Steps from './Component/Steps'
 
 const getModels = async () => {
   const res = await fetch ("./models.json")
@@ -20,18 +23,49 @@ const getPromise = getModels();
 //console.log(modelPromise);
 
 function App() {
-   
+
+  const [activeTab , setActiveTab] = useState("Products")
+   //console.log(activeTab);
  
-  
+   const [carts , setCarts] = useState([])
+  //  console.log(carts);
 
   return (
     <>
       
       
-      <Navbar></Navbar>
+      <Navbar carts = {carts}></Navbar>
       <Bannar></Bannar>
       <Activity></Activity>
-      <Models getPromise = {getPromise} />
+
+      <div id="tabSection">
+        
+        <div className="tabs tabs-box bg-transparent mt-10 justify-center">
+          <input
+            type="radio"
+            name="my_tabs_1"
+            
+            className={`tab rounded-full w-40 ${activeTab === "Products" ? "tab-active bg-blue-500 text-white" : ""}`}
+            aria-label="Products"
+            onClick={()=>setActiveTab("Products")}
+            defaultChecked
+          />
+          <input
+            type="radio"
+            name="my_tabs_1"
+            
+            className={`tab rounded-full w-40 ${activeTab === "Cart" ? "tab-active bg-blue-500 text-white" : ""}`}
+            //aria-label="Cart"
+            aria-label={`Cart (${carts.length})`}
+            onClick={()=>setActiveTab("Cart")}
+            
+          />
+        </div>
+      </div>
+      { activeTab === "Products" && <Models getPromise = {getPromise}  carts={carts} setCarts ={setCarts} />}
+      {activeTab === "Cart" && <Cart carts = {carts} setCarts = {setCarts}></Cart>}
+
+      <Steps></Steps>
       <Footer></Footer>
 
       
