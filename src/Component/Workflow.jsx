@@ -9,8 +9,8 @@ const Workflow = () => {
             </div>
 
             {/* <div className=' flex gap-5 text-center'> */}
-                <button className='btn btn-error rounded-full mr-5'>Explore Products</button>
-                <button className='btn btn-warning rounded-full'>View Pricing</button>
+                <button className='btn bg-white text-indigo-700 rounded-full mr-5'>Explore Products</button>
+                <button className='  bg-none rounded-full border border-white text-white px-3 p-2'>View Pricing</button>
             {/* </div> */}
             <p className='text-white mt-4'>14-day free trial • No credit card required • Cancel anytime</p>
              

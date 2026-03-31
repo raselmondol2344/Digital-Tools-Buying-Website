@@ -3,9 +3,10 @@ import { IoLogoInstagram } from "react-icons/io5";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
+
 const Footer = () => {
     return (
-        <div className='bg-black'>
+        <div className='bg-black overflow-hidden'>
            <div id='upperdiv' className='grid grid-cols-5 w-full  mx-auto border text-white  p-10 gap-10'>
             <div id='1'>
             <h1 className='mb-5 m-0'>DigiTools</h1>
@@ -56,7 +57,7 @@ const Footer = () => {
            </div>
 
 
-         <div id='lowerdiv' className='bg-red text-zinc-500 grid grid-cols-2 p-4 overflow-hidden'>
+         <div id='lowerdiv' className='bg-red text-zinc-500 grid grid-cols-2 p-4 overflow-hidden '>
             <div><h3>© 2026 Digitools. All rights reserved.</h3></div>
             <div className='grid grid-cols-3'>
                 <h3><h3>Privacy Policy</h3></h3>
