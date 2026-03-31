@@ -9,6 +9,7 @@ import Models from './Component/Models'
 import Cart from './Component/Cart'
 import { useState } from 'react'
 import Steps from './Component/Steps'
+import Priceing from './Component/Priceing'
 
 
 
@@ -74,6 +75,7 @@ function App() {
       {activeTab === "Cart" && <Cart carts = {carts} setCarts = {setCarts}></Cart>}
 
       <Steps></Steps>
+      <Priceing></Priceing>
       <Footer></Footer>
 
       
