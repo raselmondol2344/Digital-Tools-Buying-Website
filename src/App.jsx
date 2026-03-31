@@ -10,8 +10,16 @@ import Cart from './Component/Cart'
 import { useState } from 'react'
 import Steps from './Component/Steps'
 
+
+
+// const getModels = async () => {
+//   const res = await fetch ("./models.json")
+//   return res.json();
+// }
+
 const getModels = async () => {
-  const res = await fetch ("./models.json")
+  const res = await fetch("/models.json");
+  console.log(res);
   return res.json();
 }
 

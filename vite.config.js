@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base:"/Digital-Tools-Buying-Website/",
+ // base:"/Digital-Tools-Buying-Website/",
+ base: '/',
   plugins: [react() , tailwindcss()],
 })
