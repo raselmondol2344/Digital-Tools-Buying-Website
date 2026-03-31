@@ -10,6 +10,7 @@ import Cart from './Component/Cart'
 import { useState } from 'react'
 import Steps from './Component/Steps'
 import Priceing from './Component/Priceing'
+import Workflow from './Component/Workflow'
 
 
 
@@ -76,6 +77,7 @@ function App() {
 
       <Steps></Steps>
       <Priceing></Priceing>
+      <Workflow></Workflow>
       <Footer></Footer>
 
       

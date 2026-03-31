@@ -5,9 +5,10 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
     return (
-        <div className='grid grid-cols-5 w-full  mx-auto border text-white bg-black p-10 gap-10'>
-           <div id='1'>
-            <h1 className='mb-5'>DigiTools</h1>
+        <div className='bg-black'>
+           <div id='upperdiv' className='grid grid-cols-5 w-full  mx-auto border text-white  p-10 gap-10'>
+            <div id='1'>
+            <h1 className='mb-5 m-0'>DigiTools</h1>
             <p className='text-gray-500'>Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>
 
            </div>
@@ -39,16 +40,7 @@ const Footer = () => {
 
            </div>
 
-           {/* <div id='5' className=''>
-            <h2>Social Links</h2>
-            <div className='flex justify-center'>
-               <div><IoLogoInstagram /></div>
-                <div><FaSquareFacebook /></div>
-                <div><FaSquareXTwitter /></div>
-                
-            </div>
-
-           </div> */}
+           
 
            <div className="">
                 <h2 className="text-2xl font-bold mb-3">Social Links</h2>
@@ -58,8 +50,20 @@ const Footer = () => {
                 <div><FaSquareFacebook /></div>
                 <div><FaSquareXTwitter /></div>
     
-  </div>
-</div>
+            </div>
+            </div>
+
+           </div>
+
+
+         <div id='lowerdiv' className='bg-red text-zinc-500 grid grid-cols-2 p-4 overflow-hidden'>
+            <div><h3>© 2026 Digitools. All rights reserved.</h3></div>
+            <div className='grid grid-cols-3'>
+                <h3><h3>Privacy Policy</h3></h3>
+                <h3>Terms of Service</h3>
+                <h3>Cookies</h3>
+            </div>
+         </div>
             
         </div>
     );
